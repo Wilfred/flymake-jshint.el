@@ -81,7 +81,7 @@
 
 (defcustom jshint-configuration-path nil
   "Path to a JSON configuration file for JSHint."
-  :type 'string
+  :type 'file
   :group 'flymake-jshint)
 
 (defun flymake-jshint-init ()
