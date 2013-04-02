@@ -79,11 +79,12 @@
 
 ;;; Alternatives
 
+;; * https://github.com/lunaryorn/flycheck supports JSHint
 ;; * https://github.com/illusori/emacs-flymake is a fork of flymake
 ;;   that also supports JSHint (but does not support JSHint
 ;;   configuration)
 ;; * https://github.com/purcell/flymake-jslint will probably also
-;; work with JSHint
+;;   work with JSHint
 
 ;;; Changelog
 
