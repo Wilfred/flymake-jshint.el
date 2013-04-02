@@ -4,7 +4,7 @@
 
 ;; Author: Wilfred Hughes <me@wilfred.me.uk>
 ;; Created: 23 June 2011
-;; Version: 1.3
+;; Version: 2.0
 ;; Keywords: flymake, jshint, javascript
 ;; Package-Requires: ((flymake-easy "0.1"))
 
@@ -61,7 +61,7 @@
 ;; Add to your Emacs config:
 
 ;; (require 'flymake-jshint)
-;; (add-hook 'js-mode-hook 'flymake-mode)
+;; (add-hook 'js-mode-hook 'flymake-jshint-load)
 
 ;; making sure that flymake-jshint.el is on your load-path.  If not,
 ;; also add to your config:
