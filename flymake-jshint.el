@@ -26,21 +26,21 @@
 ;; Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
-;;; Commentary
+;;; Commentary:
 
-;; To use JSHint with emacs, you will need JSHint installed and available on
-;; your path. You should be able to do
+;; To use JSHint with Emacs, you will need JSHint installed and available on
+;; your path.  You should be able to do
 
 ;; $ jshint
 
-;; without problem. To do this, you can install node.js, npm and
+;; without problem.  To do this, you can install node.js, npm and
 ;; jshint by doing the following:
 
 ;; $ apt-get install nodejs # or your distro / OS equivalent
 ;; $ sudo npm install -g jshint
 
 ;; You will probably want to configure the warnings that JSHint
-;; produces. The full list is at http://www.jshint.com/options/ but
+;; produces.  The full list is at http://www.jshint.com/options/ but
 ;; for reference I use:
 
 ;; { "browser": true, //browser constants, such as alert
@@ -58,12 +58,12 @@
 
 ;;; Usage
 
-;; Add to your emacs config:
+;; Add to your Emacs config:
 
 ;; (require 'flymake-jshint)
 ;; (add-hook 'js-mode-hook 'flymake-mode)
 
-;; making sure that flymake-jshint.el is on your load-path. If not,
+;; making sure that flymake-jshint.el is on your load-path.  If not,
 ;; also add to your config:
 
 ;; (add-to-list 'load-path "~/.emacs.d/path/to/flymake-jshint.el")
@@ -90,6 +90,8 @@
 
 ;; v1.3 -- Refactored to use flymake-easy
 
+;;; Code:
+
 (require 'flymake-easy)
 
 (defconst flymake-jshint-err-line-patterns
@@ -102,7 +104,7 @@
   :group 'flymake-jshint)
 
 (defun flymake-jshint-command (filename)
-  "Construct a command that flymake can use to check javscript source."
+  "Construct a command that flymake can use to check javscript source for FILENAME."
   (if jshint-configuration-path
       (list "jshint" filename "--config" (expand-file-name jshint-configuration-path))
     (list "jshint" filename)))
