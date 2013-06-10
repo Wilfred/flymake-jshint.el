@@ -110,6 +110,7 @@
       (list "jshint" filename "--config" (expand-file-name jshint-configuration-path))
     (list "jshint" filename)))
 
+;;;###autoload
 (defun flymake-jshint-load ()
   "Configure flymake mode to check the current buffer's JavaScript syntax."
   (interactive)
