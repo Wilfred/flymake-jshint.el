@@ -6,7 +6,7 @@
 ;; Created: 23 June 2011
 ;; Version: 2.0
 ;; Keywords: flymake, jshint, javascript
-;; Package-Requires: ((flymake-easy "0.1"))
+;; Package-Requires: ((flymake-easy "0.8"))
 
 ;; This file is not part of GNU Emacs.
 ;; However, it is distributed under the same license.
