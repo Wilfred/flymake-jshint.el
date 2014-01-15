@@ -68,4 +68,6 @@ buffer.
 
 ## Changelog
 
+v2.0 -- Updated usage instructions following the port to flymake-easy
+
 v1.3 -- Refactored to use flymake-easy
