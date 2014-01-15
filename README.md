@@ -68,6 +68,9 @@ buffer.
 
 ## Changelog
 
+v2.1 -- We now create temporary files in the same directory as the
+source file, so jshint can see .jshintrc configuration files.
+
 v2.0 -- Updated usage instructions following the port to flymake-easy
 
 v1.3 -- Refactored to use flymake-easy
