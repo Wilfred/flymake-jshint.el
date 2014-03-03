@@ -17,7 +17,7 @@ You will probably want to configure the warnings that JSHint
 produces. The full list is at http://www.jshint.com/options/ but
 for reference I use:
 
-```json
+```js
 { "browser": true, //browser constants, such as alert
   "curly": true, // require {} on one-line if
   "undef": true, // non-globals must be declared before use
