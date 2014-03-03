@@ -5,7 +5,7 @@
 To use JSHint with emacs, you will need JSHint installed and available on
 your path. You should be able to do
 
-   $ jshint
+    $ jshint
 
 without problem. To do this, you can install node.js, npm and
 jshint by doing the following:
