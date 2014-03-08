@@ -54,11 +54,14 @@
 ;;;###autoload
 (defun flymake-jshint-load ()
   "Configure flymake mode to check the current buffer's JavaScript syntax."
+  (if flymake-run-in-place
+    (setq location 'inplace) ;; will start searching .jshintrc from original file location
+    (setq location 'tempdir)) ;; will start searching .jshintrc from tmp directory 
   (interactive)
   (flymake-easy-load
    'flymake-jshint-command
    flymake-jshint-err-line-patterns
-   'inplace
+   location
    "js"))
 
 (provide 'flymake-jshint)
