@@ -4,7 +4,7 @@
 
 ;; Author: Wilfred Hughes <me@wilfred.me.uk>
 ;; Created: 23 June 2011
-;; Version: 2.1
+;; Version: 2.2
 ;; Keywords: flymake, jshint, javascript
 ;; Package-Requires: ((flymake-easy "0.8"))
 
@@ -58,7 +58,7 @@
   (flymake-easy-load
    'flymake-jshint-command
    flymake-jshint-err-line-patterns
-   'inplace
+   'tempdir
    "js"))
 
 (provide 'flymake-jshint)

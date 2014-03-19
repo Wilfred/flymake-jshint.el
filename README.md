@@ -68,6 +68,9 @@ buffer.
 
 ## Changelog
 
+v2.2 -- Reverted to creating temporary files in a temporary directory,
+to avoid problems with file watches (see issues #1 and #2).
+
 v2.1 -- We now create temporary files in the same directory as the
 source file, so jshint can see .jshintrc configuration files.
 
